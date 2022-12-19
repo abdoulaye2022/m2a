@@ -9,15 +9,15 @@ export default function Layout({ children }) {
         <div className='container'>
             <HeaderApp />
             <div className='content'>
-                <div className='asidebar'>
+                {/* <div className='asidebar'>
                     <AsideBar />
-                </div>
+                </div> */}
                 <div className='article'>
                     {children}
                 </div>
-                <div className='list'>
+                {/* <div className='list'>
                     <RightBar />
-                </div>
+                </div> */}
             </div>
         </div>
     )

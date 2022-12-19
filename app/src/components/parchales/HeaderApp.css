@@ -13,6 +13,18 @@
 .header h3 {
     color: #183a1d;
     margin: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.header h3:hover {
+    color: #183a1d;
+    margin: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-bottom: 5px;
 }
 
 .header ul {
@@ -22,6 +34,15 @@
 .header ul li {
     display: inline-block;
     padding: 0px 10px;
+}
+
+.header ul li span {
+    cursor: pointer;
+}
+
+.header ul li span:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .header ul li .create {
