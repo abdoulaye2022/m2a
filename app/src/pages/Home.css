@@ -1,0 +1,53 @@
+.content_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .filter_bar {
+    flex: 1;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content .filter_bar .filter_btn {
+    flex: 1;
+}
+
+.content .filter_bar .filter_search {
+    flex: 1;
+}
+
+.content .filter_bar .filter_search .search {
+    width: 100%;
+}
+
+.content .article {
+    flex: 1;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .content .filter_bar {
+        flex: 1;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content .filter_bar .filter_btn {
+        order: 2;
+    }
+
+    .content .filter_bar .filter_search {
+        order: 1;
+    }
+
+    .content .filter_bar .filter_search .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

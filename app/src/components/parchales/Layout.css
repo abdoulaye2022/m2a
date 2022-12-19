@@ -1,18 +1,22 @@
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .container .header {
     width: 100%;
+    z-index: 1;
 }
 
 .container .content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .container .content .asidebar {
@@ -36,14 +40,17 @@
     }
 
     .container .content .asidebar {
+        flex: 1;
         order: 2;
     }
 
     .container .content .article {
+        flex: 1;
         order: 1;
     }
 
     .container .content .list {
+        flex: 1;
         order: 3;
     }
 }

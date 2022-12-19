@@ -1,6 +1,7 @@
 import React from 'react';
 import AsideBar from './AsideBar';
 import HeaderApp from './HeaderApp';
+import RightBar from './RightBar';
 import "./Layout.css";
 
 export default function Layout({ children }) {
@@ -15,7 +16,7 @@ export default function Layout({ children }) {
                     {children}
                 </div>
                 <div className='list'>
-                    <h1>List des articles resent</h1>
+                    <RightBar />
                 </div>
             </div>
         </div>
